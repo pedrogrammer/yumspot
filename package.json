@@ -1,0 +1,19 @@
+{
+  "name": "yumspot",
+  "version": "1.0.0",
+  "description": "🍕 Experienced yummy foods? Share the taste by introducing the restaurants you visited.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrogrammer/yumspot.git"
+  },
+  "author": "Pedram Sheikhrahimi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pedrogrammer/yumspot/issues"
+  },
+  "homepage": "https://github.com/pedrogrammer/yumspot#readme"
+}
