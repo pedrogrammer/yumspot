@@ -4,6 +4,7 @@
 
 html {
 	--color-grey-100: rgb(250, 250, 250);
+	--color-grey-200: rgb(80, 80, 80);
 	--color-grey-400: rgba(0, 0, 0, 0.4);
 	--color-grey-900: rgb(10, 10, 10);
 
