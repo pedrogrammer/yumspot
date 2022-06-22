@@ -2,9 +2,27 @@
 <html lang="en">
 	<head>
 		<%- include('includes/head') %>
+		<link rel="stylesheet" href="styles/index.css" />
+		<title>YumSpot</title>
 	</head>
 	<body>
-		<%- include('includes/header') %> 
-		<%- include('includes/footer') %> 
+		<%- include('includes/header') %>
+		<main>
+			<section id="hero">
+				<div id="hero-content">
+					<h1 class="logo">YumSpot</h1>
+					<p class="description">Make the world a tastier place!</p>
+					<button class="btn">
+						<a href="/restaurants">Browse Shared Restaurants</a>
+					</button>
+					<button class="second btn">
+						<a href="/recommend">
+							Share Your Favorite Restaurant
+						</a>
+					</button>
+				</div>
+			</section>
+		</main>
+		<%- include('includes/footer') %>
 	</body>
 </html>
