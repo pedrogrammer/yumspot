@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<%- include('includes/head') %>
-		<link rel="stylesheet" href="styles/restaurants.css">
+		<link rel="stylesheet" href="/styles/restaurants.css" />
 		<title>Browse Restaurants</title>
 	</head>
 	<body>
@@ -10,13 +10,16 @@
 		<main>
 			<section id="description">
 				<h1>Recommended restaurants</h1>
-				<p id="tip">Find your next favourite restaurants with help of our other users.</p>
+				<p id="tip">
+					Find your next favourite restaurants with help of our other
+					users.
+				</p>
 				<p id="num-of-restaurants">We found 4 restaurant(s).</p>
 				<button class="btn">Change Order</button>
 			</section>
 			<section id="restaurants">
 				<ul>
-					<%- include('includes/restaurants/restaurant-item') %> 
+					<%- include('includes/restaurants/restaurant-item') %>
 				</ul>
 			</section>
 		</main>

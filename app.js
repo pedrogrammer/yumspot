@@ -29,4 +29,8 @@ app.get('/restaurants', function (req, res) {
 	res.render('restaurants');
 });
 
+app.get('/restaurants/r1', function (req, res) {
+	res.render('restaurant-detail');
+});
+
 app.listen(3000);
