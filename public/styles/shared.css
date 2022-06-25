@@ -1,0 +1,114 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	--color-grey-100: rgb(250, 250, 250);
+	--color-grey-200: rgb(80, 80, 80);
+	--color-grey-400: rgba(0, 0, 0, 0.4);
+	--color-grey-900: rgb(10, 10, 10);
+
+	--color-orange-900: #f34335;
+}
+
+body,
+h1,
+ul {
+	margin: 0;
+}
+
+body {
+	font-family: 'Amatic SC', sans-serif;
+	background-color: var(--color-grey-900);
+	color: var(--color-grey-100);
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-grey-100);
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+#main-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--color-grey-400);
+	padding: 0 1.7%;
+	height: 50px;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+}
+
+#main-header:hover {
+	background-color: var(--color-grey-900);
+}
+
+.logo {
+	font-family: 'Oleo Script', sans-serif;
+	font-size: 2.3rem;
+	text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+#main-header nav {
+	width: 40%;
+	height: 100%;
+}
+
+#main-header nav ul {
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+}
+
+#main-header nav li {
+	height: 100%;
+}
+
+#main-header nav a {
+	display: flex;
+	align-items: center;
+	font-size: 1.6rem;
+	height: 100%;
+	padding: 0 10px;
+}
+
+#main-header nav a:hover {
+	background-color: var(--color-grey-100);
+	color: var(--color-grey-900);
+}
+
+.btn {
+	padding: 0;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	color: var(--color-grey-100);
+	background-color: var(--color-orange-900);
+	font-family: 'Amatic SC', sans-serif;
+	border: none;
+	cursor: pointer;
+}
+
+.btn a {
+	display: flex;
+	padding: 5px 10px;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--color-grey-900);
+	height: 80px;
+}
+
+footer p {
+	margin: 0;
+	color: var(--color-grey-100);
+	font-size: 1.8rem;
+}

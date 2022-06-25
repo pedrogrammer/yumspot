@@ -1,0 +1,63 @@
+h2,
+p {
+	margin: 0;
+}
+
+h1 {
+	font-size: 2.7rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+#description {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	height: 375px;
+	padding-top: 65px;
+}
+
+#tip {
+	font-size: 2rem;
+}
+
+#num-of-restaurants {
+	font-size: 1.8rem;
+}
+
+#restaurants {
+	width: 40%;
+	margin: 0 auto;
+}
+
+#description .btn {
+	padding: 5px 10px;
+}
+
+.restaurant-item {
+	padding: 3%;
+	border-radius: 20px;
+	color: var(--color-grey-900);
+	background-color: var(--color-grey-100);
+}
+
+.restaurant-item p {
+	font-size: 1.6rem;
+}
+
+.restaurant-item #info {
+	color: var(--color-grey-200);
+}
+
+.restaurant-item #opinion {
+	font-weight: 700;
+}
+
+#action {
+	display: flex;
+	justify-content: flex-end;
+}

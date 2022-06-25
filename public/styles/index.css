@@ -1,0 +1,37 @@
+#hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('/images/pizza.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 670px;
+}
+
+#hero-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2% 5%;
+	border-radius: 20px;
+	background-color: var(--color-grey-400);
+	color: var(--color-grey-100);
+}
+
+#hero-content h1 {
+	font-size: 2.5rem;
+}
+
+#hero-content .description {
+	font-size: 2.5rem;
+	margin: 5px 0 13px;
+}
+
+#hero-content .second {
+	margin-top: 10px;
+	background-color: var(--color-grey-100);
+}
+
+#hero-content .second a {
+	color: var(--color-grey-900);
+}

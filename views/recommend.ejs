@@ -1,1 +1,38 @@
-<h1>This is the recommend page.</h1>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include('includes/head') %>
+		<link rel="stylesheet" href="/styles/recommend.css" />
+		<title>Share a Restaurant</title>
+	</head>
+	<body>
+		<%- include('includes/header') %>
+		<main>
+			<h1>Share your favorite restaurant</h1>
+			<form action="" method="POST" id="share-restaurant-form">
+				<div class="form-input">
+					<label for="restaurant-name">Restaurant name</label>
+					<input type="text" name="name" id="restaurant-name" />
+				</div>
+				<div class="form-input">
+					<label for="restaurant-address">Address</label>
+					<input type="text" name="address" id="restaurant-address" />
+				</div>
+				<div class="form-input">
+					<label for="restaurant-cuisine">Type of cuisine</label>
+					<input type="text" name="cuisine" id="restaurant-cuisine" />
+				</div>
+				<div class="form-input">
+					<label for="restaurant-website">Restaurant website</label>
+					<input type="url" name="website" id="restaurant-website" />
+				</div>
+				<div class="form-input">
+					<label for="opinion">Why do you recommend it?</label>
+					<textarea name="opinion" id="opinion" rows="9"></textarea>
+				</div>
+				<button class="btn">Share Restaurant</button>
+			</form>
+		</main>
+		<%- include('includes/footer') %>
+	</body>
+</html>
