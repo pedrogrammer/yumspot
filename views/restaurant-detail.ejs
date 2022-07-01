@@ -8,11 +8,11 @@
 	<body>
 		<%- include('includes/header') %>
 		<main>
-			<h1>Test Restaurant</h1>
-			<p>American | Greatstreet 7, Mycity</p>
-			<p>It's amazing!</p>
+			<h1><%= restaurant.name %></h1>
+			<p><%= restaurant.cuisine %> | <%= restaurant.address %></p>
+			<p><%= restaurant.opinion %></p>
 			<button class="btn">
-				<a href="#">View Website</a>
+				<a href="<%= restaurant.website %>">View Website</a>
 			</button>
 		</main>
 		<%- include('includes/footer') %>

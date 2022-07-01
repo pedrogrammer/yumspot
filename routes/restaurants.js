@@ -31,8 +31,16 @@ router.get('/restaurants', function (req, res) {
 	res.render('restaurants', { restaurants: storedRestaurants });
 });
 
-router.get('/restaurants/r1', function (req, res) {
-	res.render('restaurant-detail');
+router.get('/restaurants/:id', function (req, res) {
+	const restaurantID = req.params.id;
+
+	const storedRestaurants = resData.getStoredRestaurants();
+
+	for (const restaurant of storedRestaurants)
+		if (restaurant.id === restaurantID)
+			return res.render('restaurant-detail', { restaurant: restaurant });
+
+	res.status(404).render('404');
 });
 
 module.exports = router;
