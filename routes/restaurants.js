@@ -26,7 +26,9 @@ router.post('/recommend', function (req, res) {
 });
 
 router.get('/restaurants', function (req, res) {
-	res.render('restaurants');
+	const storedRestaurants = resData.getStoredRestaurants();
+
+	res.render('restaurants', { restaurants: storedRestaurants });
 });
 
 router.get('/restaurants/r1', function (req, res) {

@@ -10,16 +10,27 @@
 		<main>
 			<section id="description">
 				<h1>Recommended restaurants</h1>
+				<% if (restaurants.length === 0) { %>
+				<p id="tip">
+					Unfortunately, we have no restaurants yet - maybe start
+					recommending some?
+				</p>
+				<% } else { %>
 				<p id="tip">
 					Find your next favourite restaurants with help of our other
 					users.
 				</p>
-				<p id="num-of-restaurants">We found 4 restaurant(s).</p>
+				<% } %>
+				<p id="num-of-restaurants">
+					We found <%= restaurants.length %> restaurant(s).
+				</p>
 				<button class="btn">Change Order</button>
 			</section>
 			<section id="restaurants">
 				<ul>
-					<%- include('includes/restaurants/restaurant-item') %>
+					<% for (const restaurant of restaurants) { %>
+					<%- include('includes/restaurants/restaurant-item', {restaurant: restaurant}) %>
+					<% } %>
 				</ul>
 			</section>
 		</main>

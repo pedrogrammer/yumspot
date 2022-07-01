@@ -1,11 +1,11 @@
 <li class="restaurant-item">
 	<article>
-		<h2>Test Restaurant</h2>
+		<h2><%= restaurant.name %></h2>
 		<div id="info">
-			<p>American</p>
-			<p>Greatstreet 7, Mycity</p>
+			<p><%= restaurant.cuisine %></p>
+			<p><%= restaurant.address %></p>
 		</div>
-		<p id="opinion">It's amazing!</p>
+		<p id="opinion"><%= restaurant.opinion %></p>
 		<div id="action">
 			<button class="btn">
 				<a href="/restaurants/r1">View Restaurant</a>

@@ -29,13 +29,19 @@ h2 {
 	font-size: 1.8rem;
 }
 
+#description .btn {
+	padding: 5px 10px;
+}
+
 #restaurants {
 	width: 40%;
 	margin: 0 auto;
 }
 
-#description .btn {
-	padding: 5px 10px;
+#restaurants ul {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 }
 
 .restaurant-item {

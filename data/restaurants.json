@@ -6,5 +6,13 @@
 		"website": "https://www.bluehillfarm.com",
 		"opinion": "It's awesome!",
 		"id": "22ddb8e7-aba8-47aa-8b26-68b210b56616"
+	},
+	{
+		"name": "Ratanà",
+		"address": "Via Gaetano de Castillia, 28, 20124 Milano MI, Italy",
+		"cuisine": "Italian",
+		"website": "http://www.ratana.it",
+		"opinion": "It's great!",
+		"id": "5133b9a5-21ae-4b69-8d00-9ba551510917"
 	}
 ]
