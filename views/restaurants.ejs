@@ -24,7 +24,10 @@
 				<p id="num-of-restaurants">
 					We found <%= restaurants.length %> restaurant(s).
 				</p>
-				<button class="btn">Change Order</button>
+				<form action="/restaurants" method="GET">
+					<input type="hidden" value="<%= nextOrder %>" name="order" />
+					<button class="btn">Change Order</button>
+				</form>
 			</section>
 			<section id="restaurants">
 				<ul>
